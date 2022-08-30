@@ -141,6 +141,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Join Main Channel', url='https://t.me/MoveisPitaaraa') ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
@@ -150,6 +151,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Join Main Channel', url='https://t.me/MoveisPitaaraa') ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except Exception as e:
